@@ -1,0 +1,2198 @@
+{
+  "board": {
+    "3dviewports": [],
+    "design_settings": {
+      "defaults": {
+        "apply_defaults_to_fp_fields": false,
+        "apply_defaults_to_fp_shapes": false,
+        "apply_defaults_to_fp_text": false,
+        "board_outline_line_width": 0.05,
+        "copper_line_width": 0.2,
+        "copper_text_italic": false,
+        "copper_text_size_h": 1.5,
+        "copper_text_size_v": 1.5,
+        "copper_text_thickness": 0.3,
+        "copper_text_upright": false,
+        "courtyard_line_width": 0.05,
+        "dimension_precision": 4,
+        "dimension_units": 3,
+        "dimensions": {
+          "arrow_length": 1270000,
+          "extension_offset": 500000,
+          "keep_text_aligned": true,
+          "suppress_zeroes": true,
+          "text_position": 0,
+          "units_format": 0
+        },
+        "fab_line_width": 0.1,
+        "fab_text_italic": false,
+        "fab_text_size_h": 1.0,
+        "fab_text_size_v": 1.0,
+        "fab_text_thickness": 0.15,
+        "fab_text_upright": false,
+        "other_line_width": 0.1,
+        "other_text_italic": false,
+        "other_text_size_h": 1.0,
+        "other_text_size_v": 1.0,
+        "other_text_thickness": 0.15,
+        "other_text_upright": false,
+        "pads": {
+          "drill": 0.3,
+          "height": 0.6,
+          "width": 0.6
+        },
+        "silk_line_width": 0.12,
+        "silk_text_italic": false,
+        "silk_text_size_h": 1.0,
+        "silk_text_size_v": 1.0,
+        "silk_text_thickness": 0.15,
+        "silk_text_upright": false,
+        "zones": {
+          "min_clearance": 0.2286
+        }
+      },
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [],
+      "meta": {
+        "filename": "board_design_settings.json",
+        "version": 2
+      },
+      "rule_severities": {
+        "annular_width": "error",
+        "clearance": "error",
+        "connection_width": "warning",
+        "copper_edge_clearance": "error",
+        "copper_sliver": "warning",
+        "courtyards_overlap": "error",
+        "creepage": "error",
+        "diff_pair_gap_out_of_range": "error",
+        "diff_pair_uncoupled_length_too_long": "error",
+        "drill_out_of_range": "error",
+        "duplicate_footprints": "warning",
+        "extra_footprint": "warning",
+        "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_mismatch": "warning",
+        "footprint_type_mismatch": "ignore",
+        "hole_clearance": "error",
+        "hole_to_hole": "warning",
+        "holes_co_located": "warning",
+        "invalid_outline": "error",
+        "isolated_copper": "warning",
+        "item_on_disabled_layer": "error",
+        "items_not_allowed": "error",
+        "length_out_of_range": "error",
+        "lib_footprint_issues": "warning",
+        "lib_footprint_mismatch": "warning",
+        "malformed_courtyard": "error",
+        "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
+        "missing_courtyard": "ignore",
+        "missing_footprint": "warning",
+        "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
+        "npth_inside_courtyard": "ignore",
+        "padstack": "warning",
+        "pth_inside_courtyard": "ignore",
+        "shorting_items": "error",
+        "silk_edge_clearance": "warning",
+        "silk_over_copper": "warning",
+        "silk_overlap": "warning",
+        "skew_out_of_range": "error",
+        "solder_mask_bridge": "error",
+        "starved_thermal": "error",
+        "text_height": "warning",
+        "text_on_edge_cuts": "error",
+        "text_thickness": "warning",
+        "through_hole_pad_without_hole": "error",
+        "too_many_vias": "error",
+        "track_angle": "error",
+        "track_dangling": "warning",
+        "track_segment_length": "error",
+        "track_width": "error",
+        "tracks_crossing": "error",
+        "unconnected_items": "error",
+        "unresolved_variable": "error",
+        "via_dangling": "warning",
+        "zones_intersect": "error"
+      },
+      "rule_severitieslegacy_courtyards_overlap": true,
+      "rule_severitieslegacy_no_courtyard_defined": false,
+      "rules": {
+        "max_error": 0.005,
+        "min_clearance": 0.0,
+        "min_connection": 0.0,
+        "min_copper_edge_clearance": 0.025,
+        "min_groove_width": 0.0,
+        "min_hole_clearance": 0.25,
+        "min_hole_to_hole": 0.25,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
+        "min_resolved_spokes": 2,
+        "min_silk_clearance": 0.0,
+        "min_text_height": 0.8,
+        "min_text_thickness": 0.08,
+        "min_through_hole_diameter": 0.2,
+        "min_track_width": 0.127,
+        "min_via_annular_width": 0.1,
+        "min_via_diameter": 0.45,
+        "solder_mask_to_copper_clearance": 0.0,
+        "use_height_for_length_calcs": true
+      },
+      "teardrop_options": [
+        {
+          "td_onpthpad": true,
+          "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
+          "td_ontrackend": false,
+          "td_onvia": true
+        }
+      ],
+      "teardrop_parameters": [
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_round_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_rect_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_track_end",
+          "td_width_to_size_filter_ratio": 0.9
+        }
+      ],
+      "track_widths": [
+        0.0,
+        0.254,
+        0.3048,
+        0.4064,
+        0.6096,
+        0.762,
+        0.9144,
+        1.016,
+        1.27,
+        1.524,
+        2.032
+      ],
+      "tuning_pattern_settings": {
+        "diff_pair_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 1.0
+        },
+        "diff_pair_skew_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        },
+        "single_track_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        }
+      },
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
+        },
+        {
+          "diameter": 1.2,
+          "drill": 0.9
+        },
+        {
+          "diameter": 2.0,
+          "drill": 1.4
+        }
+      ],
+      "zones_allow_external_fillets": false
+    },
+    "ipc2581": {
+      "dist": "",
+      "distpn": "",
+      "internal_id": "",
+      "mfg": "",
+      "mpn": ""
+    },
+    "layer_pairs": [],
+    "layer_presets": [],
+    "viewports": []
+  },
+  "boards": [],
+  "cvpcb": {
+    "equivalence_files": []
+  },
+  "erc": {
+    "erc_exclusions": [],
+    "meta": {
+      "version": 0
+    },
+    "pin_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    "rule_severities": {
+      "bus_definition_conflict": "error",
+      "bus_entry_needed": "error",
+      "bus_to_bus_conflict": "error",
+      "bus_to_net_conflict": "error",
+      "different_unit_footprint": "error",
+      "different_unit_net": "error",
+      "duplicate_reference": "error",
+      "duplicate_sheet_names": "error",
+      "endpoint_off_grid": "warning",
+      "extra_units": "error",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
+      "global_label_dangling": "warning",
+      "hier_label_mismatch": "error",
+      "label_dangling": "error",
+      "label_multiple_wires": "warning",
+      "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
+      "missing_bidi_pin": "warning",
+      "missing_input_pin": "warning",
+      "missing_power_pin": "error",
+      "missing_unit": "warning",
+      "multiple_net_names": "warning",
+      "net_not_bus_member": "warning",
+      "no_connect_connected": "warning",
+      "no_connect_dangling": "warning",
+      "pin_not_connected": "error",
+      "pin_not_driven": "error",
+      "pin_to_pin": "warning",
+      "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
+      "similar_labels": "warning",
+      "similar_power": "warning",
+      "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
+      "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
+      "unit_value_mismatch": "error",
+      "unresolved_variable": "error",
+      "wire_dangling": "error"
+    }
+  },
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
+  },
+  "meta": {
+    "filename": "proteus.kicad_pro",
+    "version": 3
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "bus_width": 12,
+        "clearance": 0.1524,
+        "diff_pair_gap": 0.254,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.254,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": -1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.254,
+        "via_diameter": 0.59944,
+        "via_drill": 0.29972,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.1524,
+        "diff_pair_gap": 0.254,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.254,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "diffpair",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": -1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.254,
+        "via_diameter": 0.59944,
+        "via_drill": 0.29972,
+        "wire_width": 6
+      }
+    ],
+    "meta": {
+      "version": 4
+    },
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/12V_MR"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/12V_PROT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/12V_RAW"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/5V_SENSOR_1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/5V_SENSOR_2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/AT1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/AT2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/AT3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/AT4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/AV1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/AV10"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/AV11"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/AV2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/AV3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/AV4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/AV5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/AV6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/AV7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/AV8"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/AV9"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/CAN+"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/CAN-"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/CAN2+"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/CAN2-"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DIGITAL_1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DIGITAL_2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DIGITAL_3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DIGITAL_4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DIGITAL_5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DIGITAL_6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/ETB1+"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/ETB1-"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/ETB2+"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/ETB2-"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HS1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HS2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HS3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HS4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/IGN1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/IGN10"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/IGN11"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/IGN12"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/IGN2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/IGN3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/IGN4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/IGN5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/IGN6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/IGN7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/IGN8"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/IGN9"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/KNOCK_1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/KNOCK_2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS10"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS11"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS12"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS13"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS14"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS15"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS16"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS8"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/LS9"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/USB_SHIELD"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/VR1+"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/VR1-"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/VR2+"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/VR2-"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/etb-1/DIR"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/etb-1/DIS"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/etb-2/DIR"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/etb-2/DIS"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/knock/FILTERED_1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/knock/FILTERED_2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/knock/V_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad1/IN1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad1/IN2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad1/IN3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad1/IN4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad2/IN1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad2/IN2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad2/IN3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad2/IN4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad3/IN1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad3/IN2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad3/IN3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad3/IN4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad4/IN1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad4/IN2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad4/IN3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/lowside_quad4/IN4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/12V_DIVIDED"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/5V_SENSOR_1_PG"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/5V_SENSOR_2_PG"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AT1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AT2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AT3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AT4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AUX_SPI_CS"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AUX_SPI_MISO"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AUX_SPI_MOSI"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AUX_SPI_SCK"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AV1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AV10"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AV11"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AV2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AV3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AV4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AV5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AV6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AV7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AV8"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/AV9"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/BARO_SCL"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/BARO_SDA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/BOOT0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/CAN2_RX"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/CAN2_TX"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/CAN_RX"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/CAN_TX"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/DIGITAL1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/DIGITAL2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/DIGITAL3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/DIGITAL4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/DIGITAL5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/DIGITAL6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/ETB1_PWM"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/ETB2_PWM"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/HS1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/HS2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/HS3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/HS4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/IGN1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/IGN10"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/IGN11"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/IGN12"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/IGN2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/IGN3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/IGN4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/IGN5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/IGN6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/IGN7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/IGN8"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/IGN9"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/LED1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/LED2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/LED3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/LED4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/SD_CS"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/SD_MISO"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/SD_MOSI"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/SD_SCK"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/SWCLK"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/SWDIO"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/UART_RX"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/UART_TX"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/VDDA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/mcu/nRESET"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/quad_analog3/IN4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/quad_analog3/OUT4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/triggers/VR1_OUT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/triggers/VR2_OUT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(BT1-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C10-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1001-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1006-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C11-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C12-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1205-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1208-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1209-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1209-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1210-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1210-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1212-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C13-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C14-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1402-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1404-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1406-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1408-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C15-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1518-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1519-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1520-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1521-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1522-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C16-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C18-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C18-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C19-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C19-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1901-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C1902-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C2-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C21-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C22-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C23-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C24-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C25-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C26-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C3-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C30-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C4-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C5-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C6-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C7-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C8-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C9-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C902-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C904-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C904-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C905-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D1501-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D1501-Pad4)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D1501-Pad6)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D1502-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D1503-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D1504-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D1505-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D1506-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D1507-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(F101-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(F102-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J1-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J1-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J1502-Pad6)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J1502-Pad7)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J1502-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J4-Pad6)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(JP1201-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R10-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R11-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1105-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1106-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1107-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1108-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1109-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1110-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1111-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1112-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R12-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1205-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1208-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1210-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1213-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1219-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1601-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1602-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1603-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1604-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R17-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1701-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1702-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1703-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1704-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R18-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1801-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1802-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1803-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1804-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R19-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1901-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1902-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1903-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R1904-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R2-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R20-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R25-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R26-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R27-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R28-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R3-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R4-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R9-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R905-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN1301-Pad5)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN1301-Pad6)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN1301-Pad7)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN1301-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN201-Pad5)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN201-Pad6)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN201-Pad7)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN201-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN301-Pad5)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN301-Pad6)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN301-Pad7)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN301-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN401-Pad5)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN401-Pad6)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN401-Pad7)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN401-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN501-Pad5)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN501-Pad6)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN501-Pad7)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RN501-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U10-Pad10)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U10-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U10-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U10-Pad9)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1004-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1004-Pad6)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1005-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1005-Pad6)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U11-Pad10)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U11-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U11-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U11-Pad9)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1203-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1204-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1204-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad10)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad102)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad11)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad110)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad12)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad13)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad132)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad133)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad22)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad49)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad50)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad53)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad54)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad55)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad56)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad57)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad60)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad63)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad7)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad75)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1501-Pad76)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1602-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1602-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1603-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1603-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1701-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1701-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1702-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1702-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1801-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1801-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1802-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1802-Pad8)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U201-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U201-Pad4)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U202-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U202-Pad4)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U301-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U301-Pad4)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U302-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U302-Pad4)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U401-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U401-Pad4)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U402-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U402-Pad4)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U501-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U501-Pad4)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U502-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U502-Pad4)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U9-Pad7)"
+      },
+      {
+        "netclass": "diffpair",
+        "pattern": "/USB_D+"
+      },
+      {
+        "netclass": "diffpair",
+        "pattern": "/USB_D-"
+      }
+    ]
+  },
+  "pcbnew": {
+    "last_paths": {
+      "gencad": "",
+      "idf": "",
+      "netlist": "",
+      "plot": "",
+      "pos_files": "",
+      "specctra_dsn": "",
+      "step": "",
+      "svg": "",
+      "vrml": ""
+    },
+    "page_layout_descr_file": ""
+  },
+  "schematic": {
+    "annotate_start_num": 0,
+    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_fmt_presets": [],
+    "bom_fmt_settings": {
+      "field_delimiter": ",",
+      "keep_line_breaks": false,
+      "keep_tabs": false,
+      "name": "CSV",
+      "ref_delimiter": ",",
+      "ref_range_delimiter": "",
+      "string_delimiter": "\""
+    },
+    "bom_presets": [],
+    "bom_settings": {
+      "exclude_dnp": false,
+      "fields_ordered": [
+        {
+          "group_by": false,
+          "label": "Reference",
+          "name": "Reference",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "LCSC_ext",
+          "name": "LCSC_ext",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PN",
+          "name": "PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "possible_not_ext",
+          "name": "possible_not_ext",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        }
+      ],
+      "filter_string": "",
+      "group_symbols": true,
+      "include_excluded_from_bom": true,
+      "name": "",
+      "sort_asc": true,
+      "sort_field": "Reference"
+    },
+    "connection_grid_size": 50.0,
+    "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
+      "default_line_thickness": 6.0,
+      "default_text_size": 50.0,
+      "field_names": [],
+      "intersheets_ref_own_page": false,
+      "intersheets_ref_prefix": "",
+      "intersheets_ref_short": false,
+      "intersheets_ref_show": false,
+      "intersheets_ref_suffix": "",
+      "junction_size_choice": 3,
+      "label_size_ratio": 0.25,
+      "operating_point_overlay_i_precision": 3,
+      "operating_point_overlay_i_range": "~A",
+      "operating_point_overlay_v_precision": 3,
+      "operating_point_overlay_v_range": "~V",
+      "overbar_offset_ratio": 1.23,
+      "pin_symbol_size": 0.0,
+      "text_offset_ratio": 0.08
+    },
+    "legacy_lib_dir": "",
+    "legacy_lib_list": [],
+    "meta": {
+      "version": 1
+    },
+    "net_format_name": "Pcbnew",
+    "page_layout_descr_file": "",
+    "plot_directory": "export/v0.7/",
+    "space_save_all_events": true,
+    "spice_adjust_passive_values": false,
+    "spice_current_sheet_as_root": false,
+    "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_dissipations": false,
+    "spice_save_all_voltages": false,
+    "subpart_first_id": 65,
+    "subpart_id_separator": 0
+  },
+  "sheets": [],
+  "text_variables": {}
+}
